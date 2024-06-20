@@ -15,6 +15,7 @@ public class InputSwipePanel : MonoBehaviour , IBeginDragHandler , IDragHandler 
     {
        _startPosition = eventData.position;
        
+
         Invoke(SwipeBegun, eventData);
     }
 

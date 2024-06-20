@@ -9,15 +9,15 @@ namespace Assets.Scripts.Player
     {
         [Header("Settings Player")]
 
-        [SerializeField] public  CharacterController playerController;
+       public  CharacterController playerController;
 
-        [SerializeField][Range(0, 10)] public float MovingPlayer;
+        [Range(0, 10)] public float MovingPlayer;
 
-        [SerializeField][Range(0, 10)] public float StraveMovingPlayer;
+        [Range(0, 10)] public float StraveMovingPlayer;
 
-        [SerializeField][Min(0)] public int MoneyPlayer;
+        [Min(0)] public int MoneyPlayer;
 
-        [SerializeField][Range(1,8)] public int PlayerLvl;
+        [Range(1,8)] public int PlayerLvl;
 
 
         [Header("Player Win and Lose")]

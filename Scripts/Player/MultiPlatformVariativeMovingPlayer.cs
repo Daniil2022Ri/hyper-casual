@@ -13,10 +13,6 @@ namespace Assets.Scripts.Player
         [SerializeField] private SwipeSystem swipeSystem;
 
         
-
-
-
-
         private void Update()
         {
             if(settingsPlayer.PlayerIsWine == false && settingsPlayer.PlayerIsLose == false)
@@ -24,9 +20,6 @@ namespace Assets.Scripts.Player
             MovingSKeyBoard(settingsPlayer.StraveMovingPlayer);
             MovingSwipePhone(settingsPlayer.StraveMovingPlayer, swipeSystem);
         }
-
-
-
 
 
         public void MovingPlayerForward()
@@ -47,7 +40,7 @@ namespace Assets.Scripts.Player
             settingsPlayer.playerController.Move(movement);
         }
 
-
+        
        
         
         public void MovingSwipePhone(float moveSpeed , SwipeSystem inputSwipe)
